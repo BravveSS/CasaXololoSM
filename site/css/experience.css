@@ -1,4 +1,21 @@
 /* Motion and editorial layers outside the opening hero. */
+.menu-dialog[open]{animation:menu-enter .55s cubic-bezier(.2,.8,.2,1) both}
+.menu-dialog[open]::backdrop{animation:menu-backdrop-in .55s ease both}
+.menu-dialog[open].is-closing{animation:menu-exit .28s ease-in both}
+.menu-dialog[open].is-closing::backdrop{animation:menu-backdrop-out .28s ease-in both}
+.menu-dialog[open]:not(.is-closing) .menu-image img{animation:menu-photo-in .85s cubic-bezier(.2,.8,.2,1) both}
+.menu-dialog[open]:not(.is-closing) .menu-content nav a{animation:menu-link-in .56s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(.12s + var(--menu-order,0) * .065s)}
+.menu-content nav a span{transition:transform .3s,color .3s}
+.menu-content nav a svg{transition:transform .3s,opacity .3s;opacity:.55}
+.menu-content nav a:hover span,.menu-content nav a:focus-visible span{transform:translateX(9px)}
+.menu-content nav a:hover svg,.menu-content nav a:focus-visible svg{transform:translateX(8px);opacity:1}
+@keyframes menu-enter{from{opacity:0;transform:translateY(4%)}to{opacity:1;transform:translateY(0)}}
+@keyframes menu-exit{to{opacity:0;transform:translateY(-3%)}}
+@keyframes menu-backdrop-in{from{opacity:0}to{opacity:1}}
+@keyframes menu-backdrop-out{to{opacity:0}}
+@keyframes menu-link-in{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+@keyframes menu-photo-in{from{opacity:.5;transform:scale(1.12)}to{opacity:1;transform:scale(1)}}
+.gallery-mobile-controls{display:none}
 .read-progress{position:fixed;inset:0 0 auto;z-index:70;height:3px;pointer-events:none}
 .read-progress span{display:block;height:100%;width:100%;background:#d6b38a;transform:scaleX(0);transform-origin:left;will-change:transform}
 .brand-mark{position:relative;display:block;flex:none;width:166px;height:60px;overflow:hidden}
@@ -54,7 +71,9 @@
 .cinematic .scene-caption p{font-size:clamp(15px,1.3vw,19px)}
 .chapter-list button:hover .chapter-track{background:rgba(255,255,255,.7)}
 @media(max-width:800px){.brand-mark{width:135px;height:49px}.brand-mark img{top:-46px}.footer-logo{width:min(450px,100%);height:160px}.footer-logo img{top:-154px}.interlude{min-height:80svh}.interlude-inner{width:88%;padding:95px 0;margin-left:var(--gutter)}.interlude h2{font-size:clamp(70px,13vw,115px)}.interlude-index{font-size:9px}.ribbon{height:62px}.ribbon-track>span{font-size:25px}.quick-dock{right:14px;bottom:14px}.cinematic .journey{height:440svh}}
-@media(max-width:440px){.brand-mark{width:128px;height:47px}.brand-mark img{top:-44px}.footer-logo{height:115px}.footer-logo img{top:calc(-.345 * (100vw - 44px))}.interlude h2{font-size:clamp(60px,14vw,80px)}.interlude-inner>p:not(.interlude-eyebrow){font-size:15px}.interlude-eyebrow{font-size:9px}.quick-dock a{padding:10px 10px 10px 15px;font-size:11px}.quick-dock button{width:38px;height:38px}.quick-dock svg{width:15px;height:15px}}
+@media(max-width:440px){.brand-mark{width:128px;height:47px}.brand-mark img{top:-44px}.footer-logo{height:115px}.footer-logo img{top:calc(-.345 * (100vw - 44px))}.interlude h2{font-size:clamp(60px,14vw,80px)}.interlude-inner>p:not(.interlude-eyebrow){font-size:15px}.interlude-eyebrow{font-size:9px}.quick-dock a{padding:10px 10px 10px 15px;font-size:11px}.quick-dock button{width:44px;height:44px}.quick-dock svg{width:15px;height:15px}}
 @media(max-width:360px){.menu-content nav a{font-size:31px;line-height:1.35}.menu-content nav{margin:18px 0}.menu-foot{gap:14px}}
+@media(max-width:600px){.gallery-mobile-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 16px}.gallery-mobile-controls p{flex:1;min-width:0;font-size:11px;letter-spacing:.08em;color:var(--muted);margin:0}.gallery-mobile-nav{display:flex;align-items:center;gap:6px;font-size:11px;white-space:nowrap}.gallery-mobile-nav button{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}.gallery-mobile-nav svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.4}.gallery-mobile-nav button:first-child svg{transform:rotate(180deg)}.gallery-filters{overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap}.gallery-filters::-webkit-scrollbar,.gallery-grid::-webkit-scrollbar{display:none}.gallery-filters button{flex:none}.gallery-grid{display:flex;position:relative;gap:14px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);scrollbar-width:none;overscroll-behavior-inline:contain;touch-action:pan-x pan-y;margin-inline:calc(-1 * var(--gutter));padding-inline:var(--gutter);padding-bottom:5px}.gallery-item,.gallery-item:nth-child(even){flex:0 0 min(82vw,370px);padding-top:0;scroll-snap-align:start;min-width:0}.gallery-open img{aspect-ratio:4/5}.gallery-item figcaption{font-size:12px}.gallery-end{margin-top:25px}}
 @media(prefers-reduced-motion:reduce){.ribbon-track{animation:none}.gallery-open:hover img,.gallery-open:focus-visible img{transform:none;filter:none}.interlude-media img,.intro-photo img{transform:none!important}.quick-dock,.coast-panel>img{transition:none}}
-html:not(.js) .quick-dock,html:not(.js) .read-progress{display:none}
+@media(prefers-reduced-motion:reduce){.menu-dialog[open],.menu-dialog[open]::backdrop,.menu-dialog[open] .menu-image img,.menu-dialog[open] .menu-content nav a{animation:none!important}.menu-content nav a span,.menu-content nav a svg{transition:none}}
+html:not(.js) .quick-dock,html:not(.js) .read-progress,html:not(.js) .gallery-mobile-controls{display:none}
