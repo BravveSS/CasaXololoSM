@@ -1,0 +1,59 @@
+/* Motion and editorial layers outside the opening hero. */
+.read-progress{position:fixed;inset:0 0 auto;z-index:70;height:3px;pointer-events:none}
+.read-progress span{display:block;height:100%;width:100%;background:#d6b38a;transform:scaleX(0);transform-origin:left;will-change:transform}
+.brand-mark{position:relative;display:block;flex:none;width:166px;height:60px;overflow:hidden}
+.brand-mark img{position:absolute;left:0;top:-57px;width:100%;max-width:none;height:auto}
+.header.solid .brand-mark img{filter:brightness(0) saturate(100%) invert(17%) sepia(22%) saturate(915%) hue-rotate(118deg) brightness(90%)}
+.footer-logo{display:block;position:relative;width:min(570px,100%);height:205px;overflow:hidden}
+.footer{background:#15342f;color:#faf5eb}
+.footer-logo img{position:absolute;left:0;top:-196px;width:100%;max-width:none;height:auto}
+.footer-small{color:rgba(250,245,235,.7)}
+.email-direct{font-size:12px;text-underline-offset:5px;width:fit-content;color:var(--muted)}
+.header.solid .languages button:not([aria-pressed=true]){opacity:.82}
+.quick-dock{position:fixed;z-index:35;right:clamp(16px,3.2vw,50px);bottom:clamp(16px,3.2vw,44px);display:flex;align-items:center;gap:5px;padding:5px;background:rgba(247,248,245,.96);color:var(--ink);border:1px solid rgba(21,52,47,.12);border-radius:60px;box-shadow:0 15px 50px rgba(8,31,31,.18);opacity:0;visibility:hidden;transform:translateY(22px);transition:opacity .4s,transform .4s,visibility .4s;backdrop-filter:blur(16px)}
+.quick-dock.is-visible{opacity:1;visibility:visible;transform:translateY(0)}
+.quick-dock a{padding:12px 16px 12px 19px;text-decoration:none;display:flex;align-items:center;gap:13px;font-size:12px;white-space:nowrap}
+.quick-dock button{width:43px;height:43px;border-radius:50%;border:1px solid rgba(21,52,47,.2);display:grid;place-items:center;transition:background .25s,color .25s}
+.quick-dock button:hover{background:var(--ink);color:white}
+.quick-dock svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.5}
+.quick-dock a:hover svg{transform:translateX(4px)}
+.quick-dock a svg{transition:transform .25s}
+.interlude{position:relative;min-height:clamp(630px,100svh,1100px);overflow:hidden;color:#fff;display:flex;align-items:center;isolation:isolate;background:#183e3e}
+.interlude-media,.interlude-media:after{position:absolute;inset:0}
+.interlude-media{z-index:-1;overflow:hidden}
+.interlude-media img{width:100%;height:100%;object-fit:cover;object-position:center 55%;transform:scale(1.04)}
+.interlude-media:after{content:'';background:linear-gradient(90deg,rgba(3,34,38,.67) 3%,rgba(3,34,38,.32) 60%,rgba(3,34,38,.1)),linear-gradient(0deg,rgba(3,34,38,.35),transparent 35%)}
+.interlude-inner{width:min(900px,80%);margin-left:var(--gutter);padding:110px 0 130px}
+.interlude-eyebrow{font-size:11px;letter-spacing:.21em;margin-bottom:45px}
+.interlude h2{font-size:clamp(78px,10vw,164px);line-height:.88;letter-spacing:-.07em}
+.interlude h2 em{font-weight:400}
+.interlude-inner>p:not(.interlude-eyebrow){font-size:clamp(16px,1.5vw,21px);line-height:1.5;max-width:27em;margin:42px 0}
+.interlude-link{display:inline-flex;align-items:center;gap:22px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.7);font-size:13px;text-decoration:none}
+.interlude-link svg{width:22px;height:22px;fill:none;stroke:white;stroke-width:1.2;transition:transform .25s}
+.interlude-link:hover svg{transform:translateX(6px)}
+.interlude-index{position:absolute;bottom:25px;right:var(--gutter);font-size:10px;letter-spacing:.2em}
+.ribbon{background:#d0d7c3;color:#15342f;overflow:hidden;height:77px;display:flex;align-items:center}
+.ribbon-track{display:flex;width:max-content;white-space:nowrap;animation:ribbon-move 55s linear infinite}
+.ribbon-track>span{font-family:var(--display);font-size:31px;letter-spacing:-.03em;padding-right:35px}
+.ribbon-track i{font-family:var(--sans);font-size:15px;font-style:normal;vertical-align:4px;margin:0 25px;color:#6e8e81}
+@keyframes ribbon-move{to{transform:translateX(-50%)}}
+.gallery-open img{transition:transform .85s cubic-bezier(.2,.75,.25,1),filter .7s;transform:scale(1.001)}
+.gallery-open:hover img,.gallery-open:focus-visible img{transform:scale(1.075);filter:saturate(1.12)}
+.gallery-open::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,33,30,.23),transparent 40%);opacity:0;transition:opacity .5s;pointer-events:none}
+.gallery-open:hover::after,.gallery-open:focus-visible::after{opacity:1}
+.expand-icon{z-index:1;transition:transform .4s,background .4s}
+.gallery-open:hover .expand-icon{transform:rotate(90deg);background:white}
+.intro-photo{overflow:hidden}
+.intro-photo img{will-change:transform}
+.coast-panel>img{transition:transform .9s cubic-bezier(.2,.75,.25,1),filter .9s}
+.coast-panel[hidden]>img{transform:scale(1.035);filter:saturate(.7)}
+.coast-panel:not([hidden])>img{transform:scale(1);filter:saturate(1)}
+.cinematic .journey{height:550svh}
+.cinematic .scene-media img{will-change:transform}
+.cinematic .scene-caption h3{text-wrap:balance}
+.cinematic .scene-caption p{font-size:clamp(15px,1.3vw,19px)}
+.chapter-list button:hover .chapter-track{background:rgba(255,255,255,.7)}
+@media(max-width:800px){.brand-mark{width:135px;height:49px}.brand-mark img{top:-46px}.footer-logo{width:min(450px,100%);height:160px}.footer-logo img{top:-154px}.interlude{min-height:80svh}.interlude-inner{width:88%;padding:95px 0;margin-left:var(--gutter)}.interlude h2{font-size:clamp(70px,13vw,115px)}.interlude-index{font-size:9px}.ribbon{height:62px}.ribbon-track>span{font-size:25px}.quick-dock{right:14px;bottom:14px}.cinematic .journey{height:440svh}}
+@media(max-width:440px){.brand-mark{width:128px;height:47px}.brand-mark img{top:-44px}.footer-logo{height:115px}.footer-logo img{top:calc(-.345 * (100vw - 44px))}.interlude h2{font-size:clamp(60px,14vw,80px)}.interlude-inner>p:not(.interlude-eyebrow){font-size:15px}.interlude-eyebrow{font-size:9px}.quick-dock a{padding:10px 10px 10px 15px;font-size:11px}.quick-dock button{width:38px;height:38px}.quick-dock svg{width:15px;height:15px}}
+@media(prefers-reduced-motion:reduce){.ribbon-track{animation:none}.gallery-open:hover img,.gallery-open:focus-visible img{transform:none;filter:none}.interlude-media img,.intro-photo img{transform:none!important}.quick-dock,.coast-panel>img{transition:none}}
+html:not(.js) .quick-dock,html:not(.js) .read-progress{display:none}
