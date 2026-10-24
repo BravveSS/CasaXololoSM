@@ -77,3 +77,5 @@
 @media(prefers-reduced-motion:reduce){.ribbon-track{animation:none}.gallery-open:hover img,.gallery-open:focus-visible img{transform:none;filter:none}.interlude-media img,.intro-photo img{transform:none!important}.quick-dock,.coast-panel>img{transition:none}}
 @media(prefers-reduced-motion:reduce){.menu-dialog[open],.menu-dialog[open]::backdrop,.menu-dialog[open] .menu-image img,.menu-dialog[open] .menu-content nav a{animation:none!important}.menu-content nav a span,.menu-content nav a svg{transition:none}}
 html:not(.js) .quick-dock,html:not(.js) .read-progress,html:not(.js) .gallery-mobile-controls{display:none}
+
+.price-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin-top:22px!important;color:var(--ink)!important}.price-line strong{font-family:var(--display);font-weight:400;font-size:clamp(24px,2.4vw,32px);letter-spacing:-.02em}.price-line span{font-size:13px;color:var(--muted)}.price-note{font-size:13px!important;margin-top:8px!important}.trust-line{margin-top:10px!important;font-size:12px!important}.trust-line a{color:inherit;text-underline-offset:4px}

@@ -271,6 +271,7 @@
     if (!!ci !== !!co) return showError('form.pair', ci ? fields.out : fields.in);
     if (ci && ci < today()) return showError('form.past', fields.in);
     if (ci && co <= ci) return showError('form.order', fields.out);
+    if (ci && dayNumber(co) - dayNumber(ci) < (Number(config.MIN_NIGHTS) || 1)) return showError('form.min', fields.out);
     const message = composeMessage(); $('#message-preview').value = message; result.hidden = false; copyKey = ''; $('#copy-status').textContent = '';
     const info = $('[data-i18n]', result), link = $('#instagram-contact');
     if (validNumber) {

@@ -98,7 +98,7 @@ window.XOLOLO_TEXT = {
     "faq.q0": "¿Cómo es la llegada?",
     "faq.a0": "El último tramo de acceso es un camino de grava y piedra, rústico y accidentado. Alex te comparte las indicaciones antes de llegar. La casa se recorre por escaleras.",
     "faq.q1": "¿Qué hay en la casa?",
-    "faq.a1": "Alberca, cocina equipada, terrazas, ventiladores, mosquiteros y wifi por Starlink. Consulta con Alex cualquier servicio imprescindible para ti, incluido el aire acondicionado y servicios adicionales.",
+    "faq.a1": "Alberca, cocina equipada y cocina al aire libre, terrazas, hamacas, ventiladores, mosquiteros y wifi por Starlink (no siempre es estable). Aire acondicionado en las recámaras a partir de noviembre de 2026.",
     "faq.q2": "¿Cómo se confirma la reserva?",
     "faq.a2": "Envía tus fechas y el número de personas. Alex confirma disponibilidad, precio total, espacios incluidos y condiciones por escrito. Una consulta no bloquea fechas ni confirma una reserva.",
     "faq.q3": "¿Podemos ir con niños?",
@@ -118,7 +118,7 @@ window.XOLOLO_TEXT = {
     "privacy.title": "Sobre tus datos",
     "footer.top": "Volver arriba",
     "footer.photos": "Fotografías de la propiedad y su entorno.",
-    "privacy.body": "Este sitio prepara tu consulta en tu navegador. No envía tus fechas ni el número de personas a un servidor propio. La preferencia de idioma se guarda en este dispositivo. Al abrir Instagram, Airbnb, Google Maps o WhatsApp, utilizas sus servicios y sus políticas de privacidad.",
+    "privacy.body": "Este sitio prepara tu consulta en tu navegador: tus fechas, nombre y mensaje no se envían a ningún servidor propio. Usamos Google Analytics y el Pixel de Meta para medir de forma agregada cuántas personas visitan la web y consultan. La preferencia de idioma se guarda en tu navegador.",
     "close": "Cerrar",
     "journey.prev": "Escena anterior",
     "journey.next": "Escena siguiente",
@@ -168,7 +168,16 @@ window.XOLOLO_TEXT = {
     "wa.sent": "Se ha abierto WhatsApp con tu consulta.",
     "wa.fallback": "Si no se abrió, continúa en WhatsApp.",
     "meta.title": "Casa Xololo | Una casa sobre el Pacífico, Oaxaca",
-    "meta.description": "Una casa con vista al mar cerca de La Boquilla, Oaxaca. Descubre sus recámaras, alberca y terrazas. Consulta tu estancia directamente con Alex."
+    "meta.description": "Una casa con vista al mar cerca de La Boquilla, Oaxaca. Descubre sus recámaras, alberca y terrazas. Consulta tu estancia directamente con Alex.",
+    "price.main": "Desde $6,300 MXN / noche",
+    "price.detail": "2 personas · mínimo 2 noches",
+    "price.note": "Reserva directo con Alex: te confirma el total exacto para tus fechas, sin comisiones de plataforma.",
+    "trust.airbnb": "★ Alexandra es Superanfitriona en Airbnb · 4.88 con más de 220 reseñas",
+    "faq.q5": "¿Cuánto cuesta?",
+    "faq.a5": "Desde $6,300 MXN por noche para 2 personas, con un mínimo de 2 noches. El total depende de las fechas y del número de personas; Alex te lo confirma por escrito antes de reservar.",
+    "faq.q6": "¿Cómo llego?",
+    "faq.a6": "El aeropuerto más cercano es Huatulco. La casa está a 7 km de Puerto Ángel y a 1.2 km de Playa La Boquilla (unos 5 minutos en auto o 15–20 a pie). Recomendamos venir en auto; Alex te manda la ubicación y las indicaciones.",
+    "form.min": "La estancia mínima es de 2 noches."
   },
   "en": {
     "skip": "Skip to content",
@@ -269,7 +278,7 @@ window.XOLOLO_TEXT = {
     "faq.q0": "What is the journey like?",
     "faq.a0": "The final approach is a rustic, uneven gravel and stone road. Alex will share directions before you arrive. Stairs connect the levels of the house.",
     "faq.q1": "What’s in the house?",
-    "faq.a1": "A pool, equipped kitchen, terraces, fans, mosquito screens and Starlink wifi. Ask Alex about any service essential to your stay, including air conditioning and additional services.",
+    "faq.a1": "Pool, equipped kitchen and outdoor kitchen, terraces, hammocks, fans, mosquito nets and Starlink wifi (not always stable). Air conditioning in the bedrooms from November 2026.",
     "faq.q2": "How is a booking confirmed?",
     "faq.a2": "Send your dates and guest count. Alex confirms availability, the total price, included spaces and terms in writing. An enquiry does not hold dates or confirm a booking.",
     "faq.q3": "Can we bring children?",
@@ -289,7 +298,7 @@ window.XOLOLO_TEXT = {
     "privacy.title": "About your data",
     "footer.top": "Back to top",
     "footer.photos": "Photographs of the property and its surroundings.",
-    "privacy.body": "This site prepares your enquiry in your browser. It does not send your dates or guest count to its own server. Your language preference is saved on this device. When you open Instagram, Airbnb, Google Maps or WhatsApp, their services and privacy policies apply.",
+    "privacy.body": "This site prepares your enquiry in your browser: your dates, name and message are not sent to any server of ours. We use Google Analytics and the Meta Pixel to measure, in aggregate, how many people visit the site and send enquiries. Your language preference is stored in your browser.",
     "close": "Close",
     "journey.prev": "Previous scene",
     "journey.next": "Next scene",
@@ -339,7 +348,16 @@ window.XOLOLO_TEXT = {
     "wa.sent": "WhatsApp has opened with your enquiry.",
     "wa.fallback": "If it didn’t open, continue on WhatsApp.",
     "meta.title": "Casa Xololo | A home above the Pacific, Oaxaca",
-    "meta.description": "An ocean-view home near La Boquilla, Oaxaca. Discover the bedrooms, pool and terraces. Enquire about your stay directly with Alex."
+    "meta.description": "An ocean-view home near La Boquilla, Oaxaca. Discover the bedrooms, pool and terraces. Enquire about your stay directly with Alex.",
+    "price.main": "From $6,300 MXN / night",
+    "price.detail": "2 guests · 2-night minimum",
+    "price.note": "Book directly with Alex: she confirms the exact total for your dates, with no platform fees.",
+    "trust.airbnb": "★ Alexandra is an Airbnb Superhost · 4.88 from 220+ reviews",
+    "faq.q5": "How much does it cost?",
+    "faq.a5": "From $6,300 MXN per night for 2 guests, with a 2-night minimum. The total depends on your dates and group size; Alex confirms it in writing before you book.",
+    "faq.q6": "How do I get there?",
+    "faq.a6": "The nearest airport is Huatulco. The house is 7 km from Puerto Ángel and 1.2 km from La Boquilla beach (about 5 minutes by car or 15–20 on foot). We recommend coming by car; Alex will send you the location and directions.",
+    "form.min": "The minimum stay is 2 nights."
   }
 };
 window.XOLOLO_PHOTOS = [
